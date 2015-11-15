@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PrivacySelector" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,87 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXN-kN-Ey7">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app wants to access the following data:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0k-cU-aSs">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vq8-a3-rzr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vq8-a3-rzr" secondAttribute="bottom" constant="20" id="9NX-Zu-mfQ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="p0k-cU-aSs" firstAttribute="leading" secondItem="ZXN-kN-Ey7" secondAttribute="leading" id="CVP-HS-PgE"/>
+                            <constraint firstItem="ZXN-kN-Ey7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="Lvu-I1-QlQ"/>
+                            <constraint firstItem="vq8-a3-rzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y1N-Pg-WFe"/>
+                            <constraint firstItem="p0k-cU-aSs" firstAttribute="top" secondItem="ZXN-kN-Ey7" secondAttribute="bottom" constant="-2" id="cDa-QO-i3n"/>
+                            <constraint firstItem="ZXN-kN-Ey7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="ftZ-iv-nJr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vq8-a3-rzr" secondAttribute="trailing" constant="-20" id="jgn-kT-XN4">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
+                            <constraint firstItem="vq8-a3-rzr" firstAttribute="top" secondItem="p0k-cU-aSs" secondAttribute="bottom" constant="48" id="pqw-Wc-Hp3"/>
+                            <constraint firstItem="vq8-a3-rzr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rLc-uI-ZWu">
+                                <variation key="heightClass=regular-widthClass=compact" constant="-20"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ZXN-kN-Ey7"/>
+                                <exclude reference="p0k-cU-aSs"/>
+                                <exclude reference="vq8-a3-rzr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Lvu-I1-QlQ"/>
+                                <exclude reference="ftZ-iv-nJr"/>
+                                <exclude reference="CVP-HS-PgE"/>
+                                <exclude reference="cDa-QO-i3n"/>
+                                <exclude reference="Y1N-Pg-WFe"/>
+                                <exclude reference="jgn-kT-XN4"/>
+                                <exclude reference="pqw-Wc-Hp3"/>
+                                <exclude reference="rLc-uI-ZWu"/>
+                                <exclude reference="9NX-Zu-mfQ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ZXN-kN-Ey7"/>
+                                <include reference="p0k-cU-aSs"/>
+                                <include reference="vq8-a3-rzr"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Lvu-I1-QlQ"/>
+                                <include reference="ftZ-iv-nJr"/>
+                                <include reference="CVP-HS-PgE"/>
+                                <include reference="cDa-QO-i3n"/>
+                                <include reference="Y1N-Pg-WFe"/>
+                                <include reference="jgn-kT-XN4"/>
+                                <include reference="pqw-Wc-Hp3"/>
+                                <include reference="rLc-uI-ZWu"/>
+                                <include reference="9NX-Zu-mfQ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="304.5" y="387"/>
         </scene>
     </scenes>
 </document>

@@ -486,6 +486,7 @@
 				DE0482461BF7CA9500BDA6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE0482471BF7CA9500BDA6EF /* Build configuration list for PBXNativeTarget "PrivacySelectorTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +495,7 @@
 				DE0482491BF7CA9500BDA6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE04824A1BF7CA9500BDA6EF /* Build configuration list for PBXNativeTarget "PrivacySelectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +504,7 @@
 				DE04824C1BF7CA9500BDA6EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
