@@ -65,6 +65,7 @@
                                 <exclude reference="vq8-a3-rzr"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9NX-Zu-mfQ"/>
                                 <exclude reference="Lvu-I1-QlQ"/>
                                 <exclude reference="ftZ-iv-nJr"/>
                                 <exclude reference="CVP-HS-PgE"/>
@@ -73,7 +74,6 @@
                                 <exclude reference="jgn-kT-XN4"/>
                                 <exclude reference="pqw-Wc-Hp3"/>
                                 <exclude reference="rLc-uI-ZWu"/>
-                                <exclude reference="9NX-Zu-mfQ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -83,6 +83,7 @@
                                 <include reference="vq8-a3-rzr"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9NX-Zu-mfQ"/>
                                 <include reference="Lvu-I1-QlQ"/>
                                 <include reference="ftZ-iv-nJr"/>
                                 <include reference="CVP-HS-PgE"/>
@@ -91,7 +92,6 @@
                                 <include reference="jgn-kT-XN4"/>
                                 <include reference="pqw-Wc-Hp3"/>
                                 <include reference="rLc-uI-ZWu"/>
-                                <include reference="9NX-Zu-mfQ"/>
                             </mask>
                         </variation>
                     </view>
