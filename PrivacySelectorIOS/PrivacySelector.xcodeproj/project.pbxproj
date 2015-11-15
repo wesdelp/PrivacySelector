@@ -14,6 +14,8 @@
 		DE04822A1BF7CA9500BDA6EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE0482281BF7CA9500BDA6EF /* LaunchScreen.storyboard */; };
 		DE0482351BF7CA9500BDA6EF /* PrivacySelectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0482341BF7CA9500BDA6EF /* PrivacySelectorTests.swift */; };
 		DE0482401BF7CA9500BDA6EF /* PrivacySelectorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE04823F1BF7CA9500BDA6EF /* PrivacySelectorUITests.swift */; };
+		DED51F741BF80DD500165AFB /* PrivacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED51F731BF80DD500165AFB /* PrivacyTableViewCell.xib */; };
+		DED51F761BF834A800165AFB /* RadialTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DED51F751BF834A800165AFB /* RadialTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		DE04823B1BF7CA9500BDA6EF /* PrivacySelectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivacySelectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE04823F1BF7CA9500BDA6EF /* PrivacySelectorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacySelectorUITests.swift; sourceTree = "<group>"; };
 		DE0482411BF7CA9500BDA6EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED51F731BF80DD500165AFB /* PrivacyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrivacyTableViewCell.xib; sourceTree = "<group>"; };
+		DED51F751BF834A800165AFB /* RadialTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RadialTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +104,11 @@
 				DE04821F1BF7CA9500BDA6EF /* AppDelegate.swift */,
 				DE0482211BF7CA9500BDA6EF /* ViewController.swift */,
 				DE0482231BF7CA9500BDA6EF /* Main.storyboard */,
+				DED51F751BF834A800165AFB /* RadialTableViewCell.xib */,
 				DE0482261BF7CA9500BDA6EF /* Assets.xcassets */,
 				DE0482281BF7CA9500BDA6EF /* LaunchScreen.storyboard */,
 				DE04822B1BF7CA9500BDA6EF /* Info.plist */,
+				DED51F731BF80DD500165AFB /* PrivacyTableViewCell.xib */,
 			);
 			path = PrivacySelector;
 			sourceTree = "<group>";
@@ -234,7 +240,9 @@
 			files = (
 				DE04822A1BF7CA9500BDA6EF /* LaunchScreen.storyboard in Resources */,
 				DE0482271BF7CA9500BDA6EF /* Assets.xcassets in Resources */,
+				DED51F741BF80DD500165AFB /* PrivacyTableViewCell.xib in Resources */,
 				DE0482251BF7CA9500BDA6EF /* Main.storyboard in Resources */,
+				DED51F761BF834A800165AFB /* RadialTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

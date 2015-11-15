@@ -37,6 +37,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jbG-Ga-M6r"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="m3C-2x-daG"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -95,6 +99,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="vq8-a3-rzr" id="EuC-qS-gFp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
